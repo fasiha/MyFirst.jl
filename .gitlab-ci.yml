@@ -1,0 +1,5 @@
+image: julia:0.5.2
+
+test:
+  script:
+  - /usr/local/julia/bin/julia -e 'Pkg.clone(pwd()); Pkg.test("MyFirst", coverage = false)'
